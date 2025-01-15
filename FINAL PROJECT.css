@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:"Neon Regular", "Neon Medium", "Neon Heavy", Arial, Helvetica, sans-serif;
+  background-color: white;
+  margin: 1em;
+  
+}
+
+ul{
+list-style-type: none;
+}
+
+.topnav {
+	background-color:aqua;
+	border: 2px aqua solid;
+	overflow: hidden;
+	text-align: center;
+	word-spacing: 2px;
+	
+}
+
+.topnav a{
+	float:left center;
+	color: white;
+	padding-top: 7px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+    text-indent: 75px;
+}
+
+.topnav a:hover {
+    background-color:#901EFD;
+  }
+
+img{
+	align-content: center;
+	padding: 1em;
+	
+}
+
+.content {
+	background-color:#FE04B2;
+	border: 2px #FE04B2 solid;
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	padding: 1em;
+	
+}
+
+.content2 {
+	background-color:#901EFD;
+	border: 2px #901EFD solid;
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	padding: 1em
+}
+
+.content3 {
+	background-color:#FE04B2;
+	border: 2px #FE04B2 solid;
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	padding: 1em;
+	
+}
+
+.content4 {
+	background-color:#54FF00;
+	border: 2px #54FF00 solid;
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	padding: 1em;
+}
+
+video{
+	align-content: center;
+}
+.footer {
+	background-color:#901EFD;
+	border: 2px #901EFD solid;
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	font-size: small;
+}
+

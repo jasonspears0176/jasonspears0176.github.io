@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:"Neon Regular", "Neon Medium", "Neon Heavy", Arial, Helvetica, sans-serif;
+  background-image: url("IMAGES/BACKGROUND.png");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  margin: 1em;
+  
+}
+
+ul{
+list-style-type: none;
+}
+
+.header {
+	background-color: #FE04B2;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 800; 
+	padding: 0.5em;
+	margin: 0.5em;
+	color: white;
+	
+	
+}
+
+.topnav {
+	background-color:aqua;
+	border: 2px aqua solid;
+	overflow: hidden;
+	text-align: center;
+	word-spacing: 2px;
+	margin: 0.5em;
+	
+	
+}
+
+.topnav a{
+	float:left center;
+	color: white;
+	padding-top: 7px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+    text-indent: 75px;
+}
+
+.topnav a:hover {
+    background-color:#901EFD;
+  }
+
+#container {
+	color: #901EFD;
+	text-align: center;
+	margin: 1em;
+	padding: 1em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.box{
+	width: 25%
+		
+}
+
+.footer {
+	background-color:#901EFD;
+	border: 2px #901EFD solid;
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	font-size: small;
+	margin: 1em;
+}
