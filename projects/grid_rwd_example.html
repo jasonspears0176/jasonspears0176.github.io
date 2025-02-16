@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cookie Site 3 Column Responsive Layout with Social Icons</title>
+        <link rel="stylesheet" href="styles.css">
+         <!--Link to social media icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!--Link to arizona font arizonia-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#video").hide();
+  });
+  $("#show").click(function(){
+    $("#video").show();
+  });
+});
+</script>
+    <!--end of script-->
+    
+</head>
+<!--Beginning of html-->
+<body>
+    <header>
+        <h1 class="arizonia">My Cookie Website</h1>
+        <div class="navbar">
+            <ul class="nav-list">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Services</a></li>
+             <li><a href="#">Contact</a></li>
+            </ul>
+            </div>
+
+        <img src="images/header.svg" alt="Header Image">
+    </header>
+     
+    <main>
+        <div class="column">
+            <img src="images/cookie1.jpg" alt="Column 1 Image">
+            <p>Column 1 Text</p>
+        </div>
+        <div class="column">
+            <img src="images/cookie2.jpg" alt="Column 2 Image">
+            <p>When it comes to cookies, there’s some classic recipes everyone recognizes. We’re talking chocolate chip, oatmeal, sugar, oatmeal, peanut butter, snowballs…you get the idea. We’ve got lots of options for those here. We know which are our favorites (like our amaretti cookies or Lofthouse sugar cookies), but you’ll have to find your own. It’s our favorite part about baking, trying out different recipes and landing on the ones you’ll make again and agai</p>
+        </div>
+        <div class="column">
+            <img src="images/cookie3.jpg" alt="Column 3 Image">
+            <p>Column 3 Text</p>
+        </div>
+    </main>
+
+    <footer>
+        
+        <h2>Video</h2>
+
+        <button class="button" id="hide">Hide Video</button>
+        <button class="button" id="show">Show Video</button>
+
+        <div id="video">
+
+            <iframe class="iframestart" src="https://www.youtube.com/embed/gLnuIplW7cA?si=ILEGo74MCaSwEjPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

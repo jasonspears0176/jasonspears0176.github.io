@@ -1,0 +1,211 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:#272425;
+}
+
+header, footer {
+    text-align: center;
+    padding: 0px ;
+    margin: 0;
+    background-image: url(images/background.jpg);
+    border: 0;
+    top:0;
+    bottom: 0;
+}
+/* Style the top navigation bar */
+.navbar { 
+    margin: 1em;
+  }
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+  }
+  
+  .nav-list li {
+    font-size: 5em;
+    margin-right: 15px; /* Adjust as needed */
+  }
+  
+  .nav-list li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-list li a {
+    color: black;
+    background-color:bisque;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+  }
+  
+  .nav-list li a:hover {
+    background-color: #555;
+  }
+  
+img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 9%;
+    margin: 0;
+    padding: 0;
+    top: 0%;
+    bottom: 0%;  
+
+}
+
+header img, footer img {
+    max-width: 75%;
+    height: auto;
+}
+h1 {
+    font-size: 10em; 
+    color: antiquewhite;
+}
+h2 {
+    padding-bottom:3px;
+} 
+/* This CSS sets up the middle section as a 3 column layout. Not the header and footer section is not part of the grid so they get the default display type of block*/
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 0;
+    background-image: url(images/background.jpg);
+}
+
+.column {
+
+    padding: auto;
+    text-align: center;
+}
+.column p
+{
+    font-size: 1.6em;
+    font-weight: 500;
+    color:black;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* These are the CSS for icons that I have linked to in the html header section to display in the footer text*/
+footer .social-icons {
+    margin-top: 20px;
+}
+
+footer .social-icons a {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
+/* This is a Google Font included for the header text*/
+.arizonia {
+  
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
+    font-style:normal;
+    
+  }
+  /* This set the starting size for the iframe in the large screen*/
+  iframe {
+    width: 1120px; 
+    height: 630px;
+  } 
+ .button {
+    padding:5px;
+    border-radius: 10px;
+    background-color: bisque;
+ }
+ 
+  
+/* This is where we start changing things based on the screen size to make it responsive*/
+
+
+/* This first part switches it to two columns and makes the video fit the size of browser it also changes the font size of the headers text to make it smaller */
+@media screen and (max-width: 1150px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    img {
+        max-width: 75%;
+    }
+    iframe{
+        width: 660px; 
+        height: 415px;
+      }
+    h1 {
+        font-size: 4em;
+        color: rgb(42, 39, 233); 
+    }
+    .column p {
+        font-size: 1em;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgba(83, 61, 45, 0.796);
+        padding: 1px;
+        
+    }
+    .nav-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: center; /* Center the items horizontally */
+      }
+      
+      .nav-list li {
+        font-size: 3em;
+        margin-right: 15px; /* Adjust as needed */
+      }
+}
+
+/* This second part switches it to one columns and makes the video and images fit the size of browser it also changes the colors and the font sizes  to make it smaller */
+@media screen and (max-width: 680px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    img {
+        width: 300px;
+    }
+    iframe{
+        width: 360px; 
+        height: 215px;
+        padding: 10px;
+      } 
+      h1 {
+        font-size: 2.2em;
+        color:black; 
+
+    }
+    .column p {
+        font-size: .75em;
+        font-weight: 800;
+        border: none;
+        
+    }
+    .nav-list {
+        list-style-type: none;
+        display: inline-block;
+        
+         /* Center the items horizontally */
+      }
+      
+      .nav-list li {
+        font-size: 2em;
+        padding: .5em;
+        margin: 10px 0 10px 10px; 
+        overflow: hidden;
+      }
+}
