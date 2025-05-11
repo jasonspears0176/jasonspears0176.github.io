@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* General Reset */
+
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  color: azure;
+  
+}
+body{
+  background-image: url("https://i.pinimg.com/originals/33/b5/96/33b596755706c28cb85e041d8deeb7df.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 10%;
+
+}
+.header{
+  display: flex;
+  justify-content: center;
+  
+}
+.header img {
+  width: 50%;
+  opacity: 0.5;
+}
+
+/* This is the CSS that makes the layout of 3 boxes for some reason you cannot go above 30% or it drops the 3rd box down. */
+.column {
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+
+.column img {
+  float: left;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.navbar{
+  margin-top: 50px;
+  font-family: naruto;
+  font-size: 2em;
+  text-shadow: 3px 3px 10px rgb(253, 4, 4);
+  list-style-type: none;
+  
+}
+
+.navbar a{
+  color: #E7E419;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style-type: none;
+
+}
+.navbar li {
+  display: inline;
+  list-style-type: none;
+}
+
+ .p1 {
+  background-color: rgb(255, 196, 0);
+  padding: 1em;
+  border-radius: 2em;
+}
+
+.p2 {
+  background-color: red;
+  border-radius: 2em;
+  padding: 1em;
+}
+.p3 {
+  background-color: orangered;
+  color: black;
+  border-radius: 2em;
+  padding: 1em;
+}
+.p1,.p2,.p3 {
+  min-height: 350px;
+}
+
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+}
+
+
+.footer p {
+ 
+  text-shadow: 3px 3px 3px gray;
+  font-size: 1.5em;
+
+}
+
+.button{
+  background-color: white;
+  color:black;
+  border-radius: .25em;
+  padding-top: 2px;
+  border: 0%;
+  margin: 0%;
+  font-size: larger;
+}
+
+
+/* This CSS uses the font that was downloaded in the webpage */
+@font-face {
+  font-family: naruto;
+  src: url(fonts/naruto.ttf);
+}
+h1 {
+  font-family: naruto;
+  font-size: 100px;
+  padding-left: 20%;
+  text-shadow: 3px 3px 3px black;
+  color: rgb(25, 83, 160);
+}
+/* Responsive layout - when the screen get a certain size I change the width of the columns and the size of the image so it will fit.*/
+@media (max-width: 900px) {
+  .column {
+    width: 100%;
+    font-size: .75em;
+  }
+.column img {
+  height: 200px;
+  
+}
+}
+
+
+
+
+
