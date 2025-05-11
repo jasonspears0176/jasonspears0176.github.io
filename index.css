@@ -1,6 +1,9 @@
+@charset "UTF-8";
+/* General Reset */
+
 
 body {
-	margin: 2em 5%;
+	margin: 2em;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	background: #0E0E0C;
 	text-align: center;
